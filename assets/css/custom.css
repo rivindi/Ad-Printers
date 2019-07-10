@@ -7,3 +7,9 @@
     width: 100px;
     height: 100px;
 }
+
+.hr {
+    height: 10px;
+    /* border: solid 1px; */
+   /* color: black */
+}
