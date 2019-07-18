@@ -34,7 +34,7 @@
                 <h5>info@adprinterslk.com</h5>
             </div>
             <div class="col-4">
-                <img class="logo" src="./assets/images/logo4.jpg">
+                <img class="logo" src="./assets/images/logo4.jpg" style="width:100%">
             </div>
             <div class="col-4">
                 <h6>Address</h6>
@@ -83,7 +83,49 @@
 
             </div>
         </nav>
+
+
+        <div class="">
+            <img class="mySlides" src="./assets/images/test1.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <img class="mySlides" src="./assets/images/test2.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            <img class="mySlides" src="./assets/images/test4.jpg" style="width:100%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                if (n > x.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = x.length }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+
+
+
     </div>
+
 
 
 </body>
