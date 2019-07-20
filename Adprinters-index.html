@@ -3,24 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AD-Printers</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>  
     <script src="./assets/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
+ 
+
   </head>
 
   <style>
@@ -38,8 +39,6 @@
          float: right;
       }
 
-      
-
 .navbar {
   width: 70%;
   background-color:none;
@@ -55,8 +54,6 @@
 
 .navbar a:hover {
   background-color:none;
-
-
 }
 
 .active {
@@ -70,15 +67,48 @@
     display: block;
   }
 }
-
+.row{
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }    
 .phone{
     font-size: 20px;
+    color: rgb(19, 67, 158);
+    justify-content: center;
+    }
+.num{
+  color: black;
+  float: left;
+}
+.address{
+  font-size: 25px;
+    float:left;
+    color: rgb(142, 145, 145);
+    margin-top: 5px;
+    float: left;
+    margin-left: 100px;
 }
 .location{
-    font-size: 20px;
+  text-align:left; 
+  color: rgb(110, 139, 236);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 2px;
+}
+.locatein{
+  float:left;
+
 }
 .email{
-    font-size: 20px;
+    font-size: 25px;
+    float: left;
+    color: rgb(142, 145, 145);
+    margin-top: 5px;
+}
+.mail{
+  float:left;
+  color: rgb(110, 139, 236);
+  font-family: Arial, Helvetica, sans-serif;
+
 }
 
 /* Caption text */
@@ -199,11 +229,6 @@
     padding: 8px;
 }
 
-.social{
-    /* align-content: center;
-    margin-left:30%; */
-}
-
 .fa {
   padding: 0px;
   font-size: 30px;
@@ -221,7 +246,7 @@
 }
 .twitter:hover {
     /* opacity: 0.8; */
-    color: rgb(0, 132, 255);
+    color: rgb(118, 184, 247);
 }
 .google:hover {
     /* opacity: 0.8; */
@@ -238,6 +263,10 @@
 .pinterest:hover {
     /* opacity: 0.8; */
     color: rgb(153, 0, 0);
+}
+.whatsapp:hover {
+    /* opacity: 0.8; */
+    color: rgb(18, 196, 12);
 }
 
 .fa-facebook {
@@ -264,6 +293,9 @@
   color:rgb(255, 255, 255);
 }
 
+.fa-whatsapp {
+  color:rgb(255, 255, 255);
+}
 
   </style>
 
@@ -271,32 +303,47 @@
   <!-- top detail bar -->
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-2">
-          <div class="phone">
-                <i class="fas fa-phone"></i>
-          </div>
-          <h5>Call Us</h5>
-        <h4>0112548932</h4>
-    </div>
-      <div class="col-sm-2">
+
+        <div class="col-sm-2">
             <div class="email">
-                    <i class="fas fa-envelope"></i>
+              <i class="fas fa-phone"> </i> <br>
+            </div>
+              <div class="mail">
+                <h4>Contact Us Now :-</h4> 
               </div>
-          <h5>E-mail</h5>
-        <h4>info@adprinterslk.com</h4>
-    </div>
+                  <div class="mailin"> 
+                    <h4> 0112548932 </h4>
+                  </div> 
+        </div> 
+
+      <div class="col-sm-2">
+          <div class="email">
+            <i class="fas fa-at"> </i> <br>
+          </div>
+            <div class="mail">
+              <h4>Email :-</h4> 
+            </div>
+                <div class="mailin"> 
+                  <h4> info@adprinterslk.com </h4>
+                </div> 
+      </div> 
+    
       <div class="col-sm-4" >
           <img class="logo" src="./assets/images/logo4.jpg" >
-    </div>
-      <div class="col-sm-4"> 
+      </div>
+
+      <div class="col-sm-4">
           <div class="address">
-                <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                  </div>
-            <h5>Address</h5>
-            <h4>No. 177/1, Brahmanagama,Pannipitiya, <br> Sri Lanka.</h4>
-          </div>    
-    </div>
+            <i class="fas fa-map-marker-alt"> </i> <br>
+          </div>
+            <div class="location">
+              <h4>Meet Us Here:-</h4> 
+            </div>
+                <div class="locatein"> 
+                  <h4> No. 177/1, Brahmanagama,
+                    <br>Pannipitiya,Sri Lanka. </h4>
+                </div> 
+      </div> 
     </div>
   </div>
   <!-- horizontal ruler -->
@@ -316,7 +363,7 @@
         </a>
         <a href="#"><i class="fas fa-trophy"> </i> Awords</a>
         <a href="#"><i class="fas fa-phone"> </i> Contact Us</a> 
-        <a href="#"><i class="fa fa-fw fa-location"></i> Galary</a>
+        <a href="#"><i class="far fa-images"></i> Galary</a>
       </div>
 
       <!-- <div class="slideshow-container">
@@ -349,8 +396,8 @@
               <span class="dot" onclick="currentSlide(1)"></span> 
               <span class="dot" onclick="currentSlide(2)"></span> 
               <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-             -->
+            </div> -->
+
              <div>
               <h1>Company Background</h1>
               <p>This text is styled with some of the text formatting properties. The heading uses the text-align,
@@ -424,7 +471,7 @@
                                                 <a href="#">Add some text</a>
                                                 <a href="#">Add some text</a>
                                             </h4>  
-                                        </div>   
+                                    </div>   
                             </div>
 
                             <div class="col-sm-3" >
@@ -458,6 +505,7 @@
             <a href="#" class="fa linkedin fa-linkedin"></a>
             <a href="#" class="fa instagram fa-instagram"></a>
             <a href="#" class="fa pinterest fa-pinterest"></a>
+            <a href="#" class="fa whatsapp fa-whatsapp"></a>
         </div>
                           <div class="hr">
                                 <hr>
