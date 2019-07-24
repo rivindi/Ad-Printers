@@ -1,73 +1,4 @@
-body{
-    padding: 20px;
-    font-family: Verdana, sans-serif; 
-    margin:0;
-}
-.home{
-margin-top: -10px;
-}
-.navbar a:hover {
-text-decoration-line: underline;
-}
 
-.active {
-text-decoration-line: underline;
-text-underline-position: below;
-}
-
-@media screen and (max-width: 500px) {
-.navbar a {
-float: none;
-display: block;
-}
-}
-.row{
-margin-top: 10px;
-margin-bottom: 20px;
-}    
-.phone{
-font-size: 20px;
-color: rgb(19, 67, 158);
-justify-content: center;
-}
-.num{
-color: black;
-float: left;
-
-}
-.address{
-font-size: 25px;
-float:left;
-color: rgb(142, 145, 145);
-margin-top: 5px;
-float: left;
-margin-left: 100px;
-}
-.location{
-text-align:left; 
-color: rgb(110, 139, 236);
-font-family: Arial, Helvetica, sans-serif;
-margin-bottom: 2px;
-}
-.locatein{
-float:left;
-
-}
-.email{
-font-size: 25px;
-float: left;
-color: rgb(142, 145, 145);
-margin-top: 5px;
-}
-.mail{
-float:left;
-color: rgb(110, 139, 236);
-}
-.mailin{
-float: left;
-margin-left: 35px;
-margin-top: -18px;
-}
 /* * {box-sizing: border-box} */
 
 .mySlides {display: none}
@@ -168,144 +99,7 @@ to {opacity: 1}
 @media only screen and (max-width: 300px) {
 .prev, .next,.text {font-size: 11px}
 }
-/* style footer */
-.footer {
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: rgb(7, 7, 7);
-color: white;
-text-align:left;
-font-size: 15px;
-padding: 20px;
-}
 
-.vertical-menu {
-width: 200px;
-font-size: 10px;
-}
-
-.vertical-menu a {
-background-color:none;
-color: rgb(248, 246, 246);
-display: block;
-padding: 8px;
-text-decoration: none;
-
-}
-
-.vertical-menu a:hover {
-background-color:none;
-}
-
-.vertical-menu a.active {
-background-color:none;
-color: none;
-}
-
-.logoft{
-height: 80px;
-width: 100px;
-margin-top: 80px;
-
-}
-.textbtm{
-margin-left: 80px;
-}
-.logobtm{
-height: 50%;
-width: 50%;
-text-align: center;
-}
-.hr{
-background-color: antiquewhite;
-height: 2px;
-
-}
-.cntct{
-padding: 8px;
-}
-
-.fa {
-padding: 0px;
-font-size: 30px;
-width: 50px;
-text-align: center;
-text-decoration: none;
-margin: 2px 2px;
-
-
-}
-
-.facebook:hover {
-/* opacity: 0.8; */
-color: rgb(44, 44, 221);
-}
-.twitter:hover {
-/* opacity: 0.8; */
-color: rgb(118, 184, 247);
-}
-.google:hover {
-/* opacity: 0.8; */
-color: rgb(224, 18, 18);
-}
-.linkedin:hover {
-/* opacity: 0.8; */
-color: rgba(38, 0, 255, 0.822);
-}
-.instagram:hover {
-/* opacity: 0.8; */
-color: rgb(234, 0, 255);
-}
-.pinterest:hover {
-/* opacity: 0.8; */
-color: rgb(153, 0, 0);
-}
-.whatsapp:hover {
-/* opacity: 0.8; */
-color: rgb(18, 196, 12);
-}
-
-.fa-facebook {
-color: rgb(255, 255, 255);
-}
-
-.fa-twitter {
-color: rgb(255, 255, 255);
-}
-
-.fa-google {
-color: rgb(255, 255, 255);
-}
-
-.fa-linkedin {
-color: rgb(255, 255, 255);
-}
-
-.fa-instagram {
-color: rgb(255, 255, 255);
-}
-
-.fa-pinterest {
-color:rgb(255, 255, 255);
-}
-
-.fa-whatsapp {
-color:rgb(255, 255, 255);
-}
-
-.navbar {
-width: 70%;
-background-color:none;
-overflow: auto;
-}
-
-.navbar a {
-padding: 0px;
-color: rgb(12, 1, 1);
-text-decoration: none;
-font-size: 17px;
-}
 .h5{
     margin-top: 10px;
     padding: 10px;
@@ -323,22 +117,30 @@ font-size: 17px;
 }
 
 .prgph1{
-background-color: chartreuse;
+background-image: url(./portfolio/images/Offset.jpg);
+background-size: 100% auto;
+/* filter: blur(1px);
+-webkit-filter: blur(1px);   */
+background-repeat: no-repeat;
 padding: 0px;
 }
 .prgph2{
-background-color: darkkhaki;
+background-image: url(./portfolio/images/flexo.jpg);
+background-size: 100% auto;
+/* filter: blur(1px);
+-webkit-filter: blur(1px);   */
+background-repeat: no-repeat;
 padding: 0px;
 }
 .prgph3{
-background-color: cyan;
+background-image: url(./portfolio/images/screen.jpg);
+background-size: 100% auto;
+/* filter: blur(1px);
+-webkit-filter: blur(1px);   */
+background-repeat: no-repeat;
 padding: 0px;
 }
-.logo{
-  width:100%;
-  height:80%;
-  margin-left: 5px;
-}
+
 
 .btn {
     border: none;
@@ -361,7 +163,7 @@ padding: 0px;
     text-align: justify;
 }
 
-.bgimg{
+/* .bgimg{
     background-image: url(here.jpg);
     position: inherit;
     background-size: cover;
@@ -377,9 +179,9 @@ padding: 0px;
     margin-top: 60px;
     margin-bottom: -20px;
     margin-left: 0;
-    color: aliceblue;
+    color: aliceblue; */
 
-}
+/* } */
 .butnbt{
     margin-left: 80%;
     margin-top: -60px;
