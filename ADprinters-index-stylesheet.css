@@ -110,6 +110,7 @@ to {opacity: 1}
     padding: 10px;
     font-size: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black
 }
 .p1{
     padding: 30px;
@@ -117,7 +118,7 @@ to {opacity: 1}
 }
 
 .prgph1{
-background-image: url(./portfolio/images/Offset.jpg);
+background-image: url(./portfolio/images/Offset1.jpg);
 background-size: 100% auto;
 /* filter: blur(1px);
 -webkit-filter: blur(1px);   */
@@ -125,7 +126,7 @@ background-repeat: no-repeat;
 padding: 0px;
 }
 .prgph2{
-background-image: url(./portfolio/images/flexo.jpg);
+background-image: url(./portfolio/images/flexo1.jpg);
 background-size: 100% auto;
 /* filter: blur(1px);
 -webkit-filter: blur(1px);   */
@@ -133,7 +134,7 @@ background-repeat: no-repeat;
 padding: 0px;
 }
 .prgph3{
-background-image: url(./portfolio/images/screen.jpg);
+background-image: url(./portfolio/images/screen1.jpg);
 background-size: 100% auto;
 /* filter: blur(1px);
 -webkit-filter: blur(1px);   */

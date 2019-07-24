@@ -10,3 +10,19 @@
 .header-managar-msg {
     margin-left: 20px;
 }
+
+.manager-msg-padding{
+    padding: 10px 20px;
+}
+
+.vision-div{
+    background-image: linear-gradient(rgba(185, 178, 67, 0.712), rgb(57, 188, 192));
+}
+
+.mission-div{
+    background-image: linear-gradient(rgba(68, 25, 25, 0.712), rgb(72, 146, 142));
+}
+
+.Strength-div{
+    background-image: linear-gradient(rgba(45, 59, 138, 0.712), rgb(94, 184, 86));
+}
