@@ -5,10 +5,11 @@
 
 .managarmsg-1 {
     padding: 0px 20px;
+    margin-left: 60px;
 }
 
 .header-managar-msg {
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
 .manager-msg-padding{
@@ -16,7 +17,7 @@
 }
 
 .vision-div{
-    background-image: linear-gradient(rgba(185, 178, 67, 0.712), rgb(57, 188, 192));
+    background-image: linear-gradient(rgba(185, 178, 67, 0.712), rgb(255, 255, 255));
 }
 
 .mission-div{
