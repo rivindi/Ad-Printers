@@ -110,12 +110,14 @@ background-color: rgba(0,0,0,0.8);
 /* Caption text */
 .text {
 color: #f2f2f2;
-font-size: 15px;
+font-size: 45px;
 padding: 8px 12px;
 position: absolute;
 bottom: 8px;
 width: 100%;
 text-align: center;
+font-family: monospace;
+margin-bottom: 11%;
 }
 
 /* Number text (1/3 etc) */
@@ -148,7 +150,7 @@ background-color: #717171;
 -webkit-animation-name: fade;
 -webkit-animation-duration: 0s;
 animation-name: fade;
-animation-duration: 40s;
+animation-duration: 20s;
 animation-fill-mode: both;
 }
 
@@ -308,33 +310,105 @@ font-size: 17px;
     margin-top: 10px;
     padding: 10px;
     margin-bottom: -15px;
+    font-size: 20px;
 }
 .h1{
     padding: 10px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .p1{
     padding: 30px;
+    font-size: 15px;
 }
 
 .prgph1{
 background-color: chartreuse;
-padding: 10px;
+padding: 0px;
 }
 .prgph2{
 background-color: darkkhaki;
-padding: 10px;
+padding: 0px;
 }
 .prgph3{
 background-color: cyan;
-padding: 10px;
+padding: 0px;
 }
 .logo{
   width:100%;
   height:80%;
+  margin-left: 5px;
 }
 
+.btn {
+    border: none;
+    background-color: #bbb;
+    padding: 16px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 30px;
+    margin-bottom: 10%;
+    
+
+
+  }
+  
 .col-sm-4{
     padding: 0px;
+}
+.backgrnd{
+    text-align: justify;
+}
+
+.bgimg{
+    background-image: url(here.jpg);
+    position: inherit;
+    background-size: cover;
+    padding: 20px;
+    margin-bottom: 30px;
+    
+}
+.quotetext{
+    text-align: center;
+    font-size: 50px;
+    font-family: fantasy;
+    text-decoration: lightyellow;
+    margin-top: 60px;
+    margin-bottom: -20px;
+    margin-left: 0;
+    color: aliceblue;
+
+}
+.butnbt{
+    margin-left: 80%;
+    margin-top: -60px;
+    margin-bottom: 5%;
+}
+.work{
+    height: 200px;
+    width: 100%;
+    background-color: crimson;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.hwrk{
+    padding: 12px 20px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    color: antiquewhite;
+}
+.pwrk{
+    padding: 12px 20px;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: antiquewhite;
+}
+.btnwrk{
+    margin-top: -100px;
+    margin-left: 80%;
 }
 
 

@@ -23,383 +23,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="./assets/js/bootstrap.min.js"></script>
 
-
+  <link rel="stylesheet" href="ADprinters-index-stylesheet.css">
 </head>
 
-<style>
-  body {
-    padding: 20px;
-    font-family: Verdana, sans-serif;
-    margin: 0;
-  }
-
-  .home {
-    margin-top: -10px;
-  }
-
-  .navbar a:hover {
-    text-decoration-line: underline;
-  }
-
-  .active {
-    text-decoration-line: underline;
-    text-underline-position: below;
-  }
-
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
-
-  .row {
-    margin-top: 10px;
-    margin-bottom: 20px;
-  }
-
-  .phone {
-    font-size: 20px;
-    color: rgb(19, 67, 158);
-    justify-content: center;
-  }
-
-  .num {
-    color: black;
-    float: left;
-
-  }
-
-  .address {
-    font-size: 25px;
-    float: left;
-    color: rgb(142, 145, 145);
-    margin-top: 5px;
-    float: left;
-    margin-left: 100px;
-  }
-
-  .location {
-    text-align: left;
-    color: rgb(110, 139, 236);
-    font-family: Arial, Helvetica, sans-serif;
-    margin-bottom: 2px;
-  }
-
-  .locatein {
-    float: left;
-
-  }
-
-  .email {
-    font-size: 25px;
-    float: left;
-    color: rgb(142, 145, 145);
-    margin-top: 5px;
-  }
-
-  .mail {
-    float: left;
-    color: rgb(110, 139, 236);
-  }
-
-  .mailin {
-    float: left;
-    margin-left: 35px;
-    margin-top: -18px;
-  }
-
-  /* * {box-sizing: border-box} */
-
-  .mySlides {
-    display: none
-  }
-
-  img {
-    vertical-align: middle;
-  }
-
-  /* Slideshow container */
-  .slideshow-container {
-    max-width: 100%;
-    position: relative;
-    margin: auto;
-  }
-
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  /* Caption text */
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.8s ease;
-  }
-
-  .active,
-  .dot:hover {
-    background-color: #717171;
-  }
-
-  /* Fading animation */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 0s;
-    animation-name: fade;
-    animation-duration: 40s;
-    animation-fill-mode: both;
-  }
-
-  @-webkit-keyframes fade {
-    from {
-      opacity: .4
-    }
-
-    to {
-      opacity: 1
-    }
-  }
-
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-
-    to {
-      opacity: 1
-    }
-  }
-
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-
-    .prev,
-    .next,
-    .text {
-      font-size: 11px
-    }
-  }
-
-  /* style footer */
-  .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgb(7, 7, 7);
-    color: white;
-    text-align: left;
-    font-size: 15px;
-    padding: 20px;
-  }
-
-  .vertical-menu {
-    width: 200px;
-    font-size: 10px;
-  }
-
-  .vertical-menu a {
-    background-color: none;
-    color: rgb(248, 246, 246);
-    display: block;
-    padding: 8px;
-    text-decoration: none;
-
-  }
-
-  .vertical-menu a:hover {
-    background-color: none;
-  }
-
-  .vertical-menu a.active {
-    background-color: none;
-    color: none;
-  }
-
-  .logoft {
-    height: 80px;
-    width: 100px;
-    margin-top: 80px;
-
-  }
-
-  .textbtm {
-    margin-left: 80px;
-  }
-
-  .logobtm {
-    height: 50%;
-    width: 50%;
-    text-align: center;
-  }
-
-  .hr {
-    background-color: antiquewhite;
-    height: 2px;
-
-  }
-
-  .cntct {
-    padding: 8px;
-  }
-
-  .fa {
-    padding: 0px;
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 2px 2px;
-
-
-  }
-
-  .facebook:hover {
-    /* opacity: 0.8; */
-    color: rgb(44, 44, 221);
-  }
-
-  .twitter:hover {
-    /* opacity: 0.8; */
-    color: rgb(118, 184, 247);
-  }
-
-  .google:hover {
-    /* opacity: 0.8; */
-    color: rgb(224, 18, 18);
-  }
-
-  .linkedin:hover {
-    /* opacity: 0.8; */
-    color: rgba(38, 0, 255, 0.822);
-  }
-
-  .instagram:hover {
-    /* opacity: 0.8; */
-    color: rgb(234, 0, 255);
-  }
-
-  .pinterest:hover {
-    /* opacity: 0.8; */
-    color: rgb(153, 0, 0);
-  }
-
-  .whatsapp:hover {
-    /* opacity: 0.8; */
-    color: rgb(18, 196, 12);
-  }
-
-  .fa-facebook {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-twitter {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-google {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-linkedin {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-instagram {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-pinterest {
-    color: rgb(255, 255, 255);
-  }
-
-  .fa-whatsapp {
-    color: rgb(255, 255, 255);
-  }
-
-  .navbar {
-    width: 100%;
-    background-color: none;
-    overflow: auto;
-  }
-
-  .navbar a {
-    padding: 0px;
-    color: rgb(12, 1, 1);
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  .prgph1 {
-    background-color: chartreuse;
-    padding: 0px;
-  }
-
-  .prgph2 {
-    background-color: darkkhaki;
-    padding: 0px;
-  }
-
-  .prgph3 {
-    background-color: cyan;
-    padding: 0px;
-  }
-
-  .logo {
-    width: 100%;
-    height: 80%;
-  }
-</style>
 
 <body>
   <!-- top detail bar -->
@@ -477,19 +103,20 @@
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
       <img src="test1.jpg" style="width:100%; height: 400px;">
-      <div class="text">Caption Text</div>
+
+      <div class="text">Lets print your printings with US</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
       <img src="test2.jpg" style="width:100%; height: 400px;">
-      <div class="text">Caption Two</div>
+      <div class="text">Enjoy Our Packaging Services</div>
     </div>
 
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
       <img src="test6.jpg" style="width:100%; height: 400px;">
-      <div class="text">Caption Three</div>
+      <div class="text">Print your Specialized designs with US</div>
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -503,7 +130,7 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
-
+  
   <div class="row">
 
     <div>
@@ -516,15 +143,20 @@
       </p>
     </div>
 
+
   </div>
 
   <br>
   <br>
+
+  <h1 style="text-align: center;">Our services</h1>
+
   <div class="row">
     <div class="col-sm-4">
       <p>
         <div class="prgph1">
           <div class="h5">
+
             <h5><strong>Stare of the art </strong></h5>
             <br>
           </div>
@@ -558,13 +190,105 @@
         <div class="h1">
           <h1><strong> Our Services</strong> </h1>
         </div>
+        
+            Stare of the art..,
+            <br>
+          </div>
+          <div class="h1">
+            Our Printing Services
+          </div>
+          <div class="p1">
+            If you can dream it, we can print it and turn your idea into a spectacular reality.
+          </div>
+
+          <div class="butn; ; d-flex justify-content-center ">
+            <button class="btn btn-outline-light text-dark btn-lg"> Read More
+              <span class="spinner-grow spinner-grow-sm"></span>
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="prgph2">
+
+        <div class="h5">
+          Solutions, Diverse as your Needs..,
+          <br>
+        </div>
+        <div class="h1">
+          Our Packaging Services
+        </div>
+        <div class="p1">
+          From die creation to prototyping and design, we've got you covered and make it true.
+        </div>
+        <div class="butn; ; d-flex justify-content-center ">
+          <button class="btn btn-outline-light text-dark btn-lg"> Read More
+            <span class="spinner-grow spinner-grow-sm"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="prgph3">
+        <div class="h5">
+          Tailor-made Packaging Concepts..,
+          <br>
+        </div>
+        <div class="h1">
+          Specialized Design
+        </div>
+        <div class="p1">
+          Expert help with seven specialized package design to make your desire real.
+        </div>
+
+        <div class="butn; d-flex justify-content-center">
+          <button class="btn btn-outline-light text-dark btn-lg"> Read More
+            <span class="spinner-grow spinner-grow-sm"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+
+  <!--add work with us phara -->
+  <div class="work">
+    <div class="para">
+      <div class="textwrk">
+        <div class="hwrk">
+          Would you interest in work with us?
+        </div>
+        <div class="pwrk">
+          If you interest to work with us, lets inquire us or try your free quote. <br>
+          We always ready to assist You
+        </div>
+        <div class="btnwrk">
+          <button class="btn btn-outline-light text-dark btn-lg">
+            Contact Us
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--add free quote -->
+  <div class="quotebk">
+    <div class="bgimg" style="opacity: 1;">
+      <div class="quotetext" style="opacity:1;" data-animated="fadeInDown">
+        <strong>Try Your FREE Quote Now </strong>
+        <div class="butnbt">
+          <button class="btn btn-outline-light text-dark btn-lg">
+            request Quote
+          </button>
+        </div>
+
       </div>
     </div>
 
   </div>
-
-
- 
 
   <!-- footer -->
   <div class="footer">
@@ -594,7 +318,7 @@
             </h4>
           </div>
         </div>
-
+        
         <div class="col-sm-3">
           <img class="logoft" src="comodo_secure.png">
           <h3>SSL Certyficate</h3>
@@ -610,6 +334,7 @@
 
           </div>
         </div>
+
       </div>
 
 
@@ -632,6 +357,7 @@
         <hr>
       </div>
       <br>
+
       <!-- Footer bottm deco -->
       <div class="col-sm-4">
         <div class="textbtm">
@@ -657,6 +383,10 @@
       </div>
     </div>
   </div>
+  <!-- Solution by us -->
+  <h5 style="text-align: center;"> &copy Software solution by VOORALiT. All rights recerved-2019.</h5>
+
+  <!-- Function to slide show animations -->
 
   <script>
     var slideIndex = 1;
