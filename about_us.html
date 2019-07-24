@@ -2,99 +2,449 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <title>AD PRINTERS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AD-Printers</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+    integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="./assets/js/bootstrap.min.js"></script>
+
 </head>
 <style>
-    div {
-   
-      margin-top: 20px;
-      margin-bottom: 20px;
+  body {
+    padding: 20px;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+  }
 
-    }
-    </style>
+  .home {
+    margin-top: -10px;
+  }
+
+  .navbar a:hover {
+    text-decoration-line: underline;
+  }
+
+  .active {
+    text-decoration-line: underline;
+    text-underline-position: below;
+  }
+
+  .row {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .phone {
+    font-size: 20px;
+    color: rgb(19, 67, 158);
+    justify-content: center;
+  }
+
+  .num {
+    color: black;
+    float: left;
+
+  }
+
+  .address {
+    font-size: 25px;
+    float: left;
+    color: rgb(142, 145, 145);
+    margin-top: 5px;
+    float: left;
+    margin-left: 100px;
+  }
+
+  .location {
+    text-align: left;
+    color: rgb(110, 139, 236);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 2px;
+  }
+
+  .locatein {
+    float: left;
+
+  }
+
+  .email {
+    font-size: 25px;
+    float: left;
+    color: rgb(142, 145, 145);
+    margin-top: 5px;
+  }
+
+  .mail {
+    float: left;
+    color: rgb(110, 139, 236);
+  }
+
+  .mailin {
+    float: left;
+    margin-left: 35px;
+    margin-top: -18px;
+  }
+
+
+
+  img {
+    vertical-align: middle;
+  }
+
+  .navbar {
+    width: 100%;
+    background-color: none;
+    overflow: auto;
+  }
+
+  .navbar a {
+    padding: 0px;
+    color: rgb(12, 1, 1);
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .logo {
+    width: 100%;
+    height: 80%;
+  }
+
+  /* style footer */
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(7, 7, 7);
+    color: white;
+    text-align: left;
+    font-size: 15px;
+    padding: 20px;
+  }
+
+  .vertical-menu {
+    width: 200px;
+    font-size: 10px;
+  }
+
+  .vertical-menu a {
+    background-color: none;
+    color: rgb(248, 246, 246);
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+
+  }
+
+  .vertical-menu a:hover {
+    background-color: none;
+  }
+
+  .vertical-menu a.active {
+    background-color: none;
+    color: none;
+  }
+
+  .logoft {
+    height: 80px;
+    width: 100px;
+    margin-top: 80px;
+
+  }
+
+  .textbtm {
+    margin-left: 80px;
+  }
+
+  .logobtm {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+  }
+
+  .hr {
+    background-color: antiquewhite;
+    height: 2px;
+
+  }
+
+  .cntct {
+    padding: 8px;
+  }
+
+  .fa {
+    padding: 0px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 2px 2px;
+
+
+  }
+
+  .facebook:hover {
+    /* opacity: 0.8; */
+    color: rgb(44, 44, 221);
+  }
+
+  .twitter:hover {
+    /* opacity: 0.8; */
+    color: rgb(118, 184, 247);
+  }
+
+  .google:hover {
+    /* opacity: 0.8; */
+    color: rgb(224, 18, 18);
+  }
+
+  .linkedin:hover {
+    /* opacity: 0.8; */
+    color: rgba(38, 0, 255, 0.822);
+  }
+
+  .instagram:hover {
+    /* opacity: 0.8; */
+    color: rgb(234, 0, 255);
+  }
+
+  .pinterest:hover {
+    /* opacity: 0.8; */
+    color: rgb(153, 0, 0);
+  }
+
+  .whatsapp:hover {
+    /* opacity: 0.8; */
+    color: rgb(18, 196, 12);
+  }
+
+  .fa-facebook {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-twitter {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-google {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-linkedin {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-instagram {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-pinterest {
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-whatsapp {
+    color: rgb(255, 255, 255);
+  }
+
+  .prgph1 {
+    background-color: gray;
+    padding: 0px;
+  }
+
+  .prgph2 {
+    background-color: gray;
+    padding: 0px;
+  }
+
+  .prgph3 {
+    background-color: gray;
+    padding: 0px;
+  }
+
+
+
+</style>
 
 <body>
+  <div class="container-fluid">
+    <div class="row">
 
-    <div class="container">
-        <div class="row text-center">
-            <h1 class="text-center">
-                Our Vision
-            </h1>
+      <div class="col-sm-2">
+        <div class="email">
+          <i class="fas fa-phone"> </i> <br>
         </div>
-        <h4>
-            A.D.Printers Wishes to be a specialized in Manufacturing offset printed packaging and flexo printing
-            By obtaining and applying of new innovations of the printing industry to meet the customer needs in
-            Offset and flexo printed packaging and to be a most trustable printing organization in the Sri Lanka.
-
-
-        </h4>
-
-        <br>
-
-        <div class="row text-center">
-            <h1 class="text-center">
-                Our Mission
-            </h1>
+        <div class="mail">
+          <h4>Contact Us Now :-</h4>
         </div>
-        <h4>
-            A.D. Printers is a employing a dedicate team of printers and its supportive staff with the mission to do
-            their Best in producing offset and flexo printed packaging while considering the quality
-            Of the products, customer Satisfaction and well-being of the staff as priority
-
-
-        </h4>
-
-        <br>
-
-        <div class="row text-center">
-            <h1 class="text-center">
-                Managing Director Message
-            </h1>
+        <div class="numin">
+          <h4> 0112548932 </h4>
         </div>
-        <h4>
-            A.D .Printers (PVT) Ltd comprises a team of dedicated forces who identify the importance of satisfying
-            customer which is why we have been successful of our foundation. Customer satisfaction is the key to
-            success, who approaches us, is treated with dignity Big or Small, are treated equally. We satisfy the
-            customers who need even a single box.
-            Formally known as A.D.Printers with a small offset company, we are now large scale offset and flexo printing
-            company. Now,We own state of the art technology for the offset and flexo printing. A well-equipped printing
-            outfit, employing over 80 employees and processing over 5 containers of paper and board into printed a
-            month. We have a long established source of dedicated material suppliers and outsource services providers. I
-            all ways believe in achieving quality through good practice and to achieve this, quality is not in an
-            accident.
-            A.D.Printers has become a trusted printing for corporate client as Hayley’s Group, Ceylon Biscuit, Mas
-            Holding, Mabrock Teas, Superfine Teas, and Hansel Lanka etc... Company serves a prestigious clientele local
-            and overseas covering internationally brands.
-            Human resource is the basic driving force of any organization. We are capable of doing our production with
-            high quality by using our man power handled by an energetic team of well qualified staff in the printing
-            industry. We trust that our one of key to success secret is our team work. We maintain the quality as well
-            as quantity required by the customer at a short period of time
-            This is only principal information about us to enable you give us an opportunity to render our service. We
-            build lasting relationship through services based on honestly, reliability, professionalism and ethical
-            business practice.
-            I request you, our customer, to go through this company profile of our establishment which tells you what we
-            are, for a better understanding and for lasting relationship between us.
-            <br>
-            Thank You
-            <br>
+      </div>
 
-            Ajith Perera
-            <br>
-            Managing Director
+      <div class="col-sm-2">
+        <div class="email">
+          <i class="fas fa-at"> </i> <br>
+        </div>
+        <div class="mail">
+          <h4>Email :-</h4>
+        </div>
+        <div class="mailin">
+          <h4> info@adprinterslk.com </h4>
+        </div>
+      </div>
 
+      <div class="col-sm-4">
+        <img class="logo" src="./assets/images/logo4.jpg">
+      </div>
 
-
-        </h4>
-
-
+      <div class="col-sm-4">
+        <div class="address">
+          <i class="fas fa-map-marker-alt"> </i> <br>
+        </div>
+        <div class="location">
+          <h4>Meet Us Here:-</h4>
+        </div>
+        <div class="locatein">
+          <h4> No. 177/1, Brahmanagama,
+            <br>Pannipitiya,Sri Lanka. </h4>
+        </div>
+      </div>
     </div>
+  </div>
+  <!-- horizontal ruler -->
+  <hr>
+  <!-- navigation bar -->
+  <div class="navbar">
+    <div class="home">
+      <a href="#"><i class="fa fa-fw fa-home"> </i> Home</a>
+    </div>
+    <a href="#"><i class="fas fa-users"> </i> About Us</a>
+    <a href="#"><i class="fas fa-thumbtack"> </i> Our Products & Services
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="#">Offset</a>
+        <a class="dropdown-item" href="#">Flexo</a>
+        <a class="dropdown-item" href="#">Trading</a>
+        <div class="dropdown-divider">
+        </div>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </a>
+    <a href="#"><i class="fas fa-trophy"> </i> Awords</a>
+    <a href="#"><i class="fas fa-phone"> </i> Contact Us</a>
+    <a href="#"><i class="far fa-images"></i> Galary</a>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h1 class="text-center">
+        Managing Director Message
+      </h1>
+    </div>
+    <h4>
+      A.D .Printers (PVT) Ltd comprises a team of dedicated forces who identify the importance of satisfying
+      customer which is why we have been successful of our foundation. Customer satisfaction is the key to
+      success, who approaches us, is treated with dignity Big or Small, are treated equally. We satisfy the
+      customers who need even a single box.
+      Formally known as A.D.Printers with a small offset company, we are now large scale offset and flexo printing
+      company. Now,We own state of the art technology for the offset and flexo printing. A well-equipped printing
+      outfit, employing over 80 employees and processing over 5 containers of paper and board into printed a
+      month. We have a long established source of dedicated material suppliers and outsource services providers. I
+      all ways believe in achieving quality through good practice and to achieve this, quality is not in an
+      accident.
+      A.D.Printers has become a trusted printing for corporate client as Hayley’s Group, Ceylon Biscuit, Mas
+      Holding, Mabrock Teas, Superfine Teas, and Hansel Lanka etc... Company serves a prestigious clientele local
+      and overseas covering internationally brands.
+      Human resource is the basic driving force of any organization. We are capable of doing our production with
+      high quality by using our man power handled by an energetic team of well qualified staff in the printing
+      industry. We trust that our one of key to success secret is our team work. We maintain the quality as well
+      as quantity required by the customer at a short period of time
+      This is only principal information about us to enable you give us an opportunity to render our service. We
+      build lasting relationship through services based on honestly, reliability, professionalism and ethical
+      business practice.
+      I request you, our customer, to go through this company profile of our establishment which tells you what we
+      are, for a better understanding and for lasting relationship between us.
+      <br>
+      Thank You
+      <br>
+
+      Ajith Perera
+      <br>
+      Managing Director
+
+
+
+    </h4>
+  </div>
+  <br>
+  <br>
+  <div class="col-sm-4">
+    <p>
+      <div class="prgph1">
+        <div class="h1">
+          <h1><strong> Our Vission </strong></h1>
+          <br>
+        </div>
+        <div class="h4">
+          <h4>A.D.Printers Wishes to be a specialized in Manufacturing offset printed packaging and flexo
+            printing By obtaining and applying of new innovations of the printing industry to meet the customer
+            needs in Offset and flexo printed packaging and to be a most trustable printing organization in the Sri
+            Lanka.
+          </h4>
+        </div>
+
+    </p>
+  </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="prgph2">
+
+      <div class="h1">
+        <h1><strong> Our Mission </strong></h1>
+        <br>
+      </div>
+      <div class="h4">
+        <h4>A.D. Printers is a employing a dedicate team of printers and its supportive staff with the mission
+          to do their Best in producing offset and flexo printed packaging while considering the quality Of the
+          products, customer Satisfaction and well-being of the staff as priority
+        </h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-4">
+    <div class="prgph3">
+      <div class="h1">
+        <h1><strong> Our Strength </strong></h1>
+        <h3><strong> [Graphic Section] </strong></h3>
+      </div>
+      <div class="h4">
+        <h4>Graphic Department with the fully qualified,experience designers, working on latest software and
+          Hardware’s. We are up dated the facilities on time to service to local and international market.
+        </h4>
+      </div>
+    </div>
+  </div>
+  
+  
+  
 
 </body>
+
+
 
 </html>
