@@ -108,7 +108,8 @@ body{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgb(7, 7, 7);
+    /* background-color: rgb(7, 7, 7); */
+    background-color:#3E2723;
     color: white;
     text-align:left;
     font-size: 15px;
