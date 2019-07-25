@@ -1,28 +1,4 @@
-/* .award1-div{
-    background-color: gold;
-}
-
-.award2-div{
-    background-color: yellowgreen;
-}
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  
-.award1-div {
-    padding: 10px 0px;
-}
-
-.award2-div {
-    padding: 10px 0px;
-} */
-
-
-/* Three image containers (use 25% for four, and 50% for two, etc) */
+/* Three image containers 
 .column {
     float: left;
     width: 50%;
@@ -40,7 +16,7 @@
       margin-left: 200px;
   }
 
-
+  
 
 
 
