@@ -1,10 +1,10 @@
-.offset{
+.flexo{
     margin-left: 0px;
     font-size: 16px;
     padding-top:2%; 
 }
 
-.offset1{
+.flexo1{
     padding: 10px;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -24,6 +24,6 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
-  .offset-div{
+  .flexo-div{
     background-image: linear-gradient(rgba(185, 178, 67, 0.712), rgb(255, 255, 255));
 }
