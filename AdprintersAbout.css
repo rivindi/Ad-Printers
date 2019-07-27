@@ -86,3 +86,13 @@
     color: rgb(48, 124, 236);
 }
 
+.strength
+{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.strengthimg{
+    float: right;
+    margin-top: 10px;
+}
