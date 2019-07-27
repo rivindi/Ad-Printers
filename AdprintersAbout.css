@@ -48,10 +48,41 @@
     text-align: center;
     font-size: 32px;
     font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .brfabout{
     padding-top: 10px;
     padding-bottom: 10px;
 }
-    
+
+.vision{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.missionimg{
+    float: right;
+}
+
+.mission{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.value{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    color: brown;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+}
+
+.tag{
+    text-align: center;
+    color: rgb(48, 124, 236);
+}
+
