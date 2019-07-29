@@ -1,0 +1,98 @@
+
+.text1 {
+    color: #f2f2f2;
+    font-size: 45px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 1300px;
+    text-align: center;
+    font-family: monospace;
+    margin-bottom: 11%;
+    }
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+        }
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 0s;
+    animation-name: fade;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    }
+    
+    @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+    
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    }
+
+.head{
+    text-align: center;
+    font-size: 32px;
+    font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.brfabout{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.vision{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.missionimg{
+    float: right;
+}
+
+.mission{
+    text-align: center;
+    margin-top: 10%;
+}
+
+.value{
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    color: brown;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+}
+
+.tag{
+    text-align: center;
+    color: rgb(48, 124, 236);
+}
+
+.strength
+{
+    text-align: center;
+    margin-top: 20%;
+}
+
+.strengthimg{
+    float: right;
+    margin-top: 10px;
+}
