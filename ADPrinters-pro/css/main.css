@@ -8,10 +8,12 @@
 
 /* =================================== */
 
-body {
-  /* background-image: url("../assets/images/6385.jpg"); */
-  /* background-color: #3939406d; */
- }
+.column {
+  float: left;
+  width: 25%;
+  padding: 5px;
+}
+
 
  .bg-abt{
   height: auto;
@@ -731,6 +733,10 @@ td, th {
 
 .pl-90 {
   padding-left: 90px;
+}
+
+.pr-90 {
+  padding-right: 90px;
 }
 
 .p-40 {
